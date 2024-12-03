@@ -1,8 +1,8 @@
 {
   "name": "twithive",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Your Hive of Thoughts and Connections",
+  "author": "Sakib Al Jaber",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
