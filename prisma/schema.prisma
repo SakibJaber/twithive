@@ -25,6 +25,19 @@ model User {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
   tweets     Tweet[]
+  tokens      Token[]
+}
+
+model Token {
+  id         Int      @id @default(autoincrement())
+  type       String
+  emailToken String?  @unique
+  valid      Boolean  @default(true)
+  expiration DateTime
+  userId     Int
+  user       User     @relation(fields: [userId], references: [id])
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
 
 model Tweet {

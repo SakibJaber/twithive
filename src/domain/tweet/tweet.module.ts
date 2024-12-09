@@ -3,6 +3,7 @@ import { TweetService } from './tweet.service';
 import { TweetController } from './tweet.controller';
 
 @Module({
+  imports: [],
   controllers: [TweetController],
   providers: [TweetService],
 })
